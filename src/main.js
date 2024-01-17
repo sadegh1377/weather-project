@@ -4,6 +4,11 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import axios from "axios"
+import '@mdi/font/css/materialdesignicons.css'
+
+Vue.use(vuetify, {
+    iconfont: 'mdi'
+})
 
 const base = axios.create({
     baseURL: "http://api.weatherapi.com/v1/",
